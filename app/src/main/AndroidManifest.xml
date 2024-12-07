@@ -12,15 +12,26 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Chouflidar"
         tools:targetApi="31">
+
+        <!-- Welcome Activity: The entry point of your app -->
         <activity
-            android:name=".MainActivity"
+            android:name=".WelcomeActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!-- Sign-Up Activity -->
+        <activity
+            android:name=".SignUpActivity"
+            android:exported="true" />
+
+        <!-- Sign-In Activity -->
+        <activity
+            android:name=".SignInActivity"
+            android:exported="true" />
     </application>
 
 </manifest>
