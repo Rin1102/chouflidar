@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class SignInActivity extends AppCompatActivity {
@@ -19,11 +20,21 @@ public class SignInActivity extends AppCompatActivity {
         EditText emailField = findViewById(R.id.signInEmail);
         EditText passwordField = findViewById(R.id.signInPassword);
 
-        String email = emailField.getText().toString();
-        String password = passwordField.getText().toString();
+        String email = emailField.getText().toString().trim();
+        String password = passwordField.getText().toString().trim();
 
-        // Add authentication logic here (e.g., check email/password against saved data)
-        // Redirect to the home page if login is successful
+        // Check for valid credentials
+        if (email.equals("admin") && password.equals("admin")) {
+            // Show a welcome toast
+            Toast.makeText(this, "Welcome!", Toast.LENGTH_SHORT).show();
+
+            // Redirect to another activity (e.g., home page)
+            Intent intent = new Intent(this, WelcomeActivity.class);
+            startActivity(intent);
+        } else {
+            // Show an error toast
+            Toast.makeText(this, "Please verify your entries!", Toast.LENGTH_SHORT).show();
+        }
     }
 
     // Navigate to the Sign-Up page
@@ -32,4 +43,3 @@ public class SignInActivity extends AppCompatActivity {
         startActivity(intent);
     }
 }
-
