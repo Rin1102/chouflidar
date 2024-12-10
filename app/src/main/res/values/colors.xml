@@ -1,5 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <color name="light_brown">#D4A38D</color> <!-- Light brown hex code -->
+
+    <color name="white">#FFFFFF</color> <!-- White hex code -->
+
+    <color name="light_beige">#F5F5F1</color> <!-- Light beige for background -->
+
+    <color name="dark_brown">#8B5A2B</color> <!-- Dark brown for accents -->
 </resources>

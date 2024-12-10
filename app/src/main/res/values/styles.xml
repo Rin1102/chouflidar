@@ -1,0 +1,16 @@
+<resources>
+    <!-- Base application theme -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:colorBackground">@color/light_beige</item>
+        <item name="android:textColorPrimary">@color/light_brown</item>
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:actionBarStyle">@style/ActionBarStyle</item>
+    </style>
+    <style name="ActionBarStyle">
+        <item name="android:background">@color/light_brown</item>
+        <item name="android:titleTextStyle">@style/ActionBarTitleText</item>
+    </style>
+    <style name="ActionBarTitleText">
+        <item name="android:textColor">@color/white</item>
+    </style>
+</resources>

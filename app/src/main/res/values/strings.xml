@@ -1,3 +1,15 @@
 <resources>
-    <string name="app_name">Chouflidar</string>
+    <string name="app_name">Rental App</string>
+    <string name="rent_button">Rent</string>
+    <string name="binome_button">Binome</string>
+    <string name="homestead_button">Homestead</string>
+    <string name="help_button">Help</string>
+    <string name="login_button">Log In</string>
+    <string name="project_description">
+        We're dedicated to simplifying the rental process,
+        connecting you with the perfect property or roommate.
+        Find your ideal living situation effortlessly with us.
+    </string>
+    <string name="privacy_text">Privacy</string>
+    <string name="social_media_text">Social Media</string>
 </resources>

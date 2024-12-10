@@ -1,24 +1,65 @@
-package essths.li3.chouflidar;
+package com.example.rentalapp;
 
+import android.content.Intent;
 import android.os.Bundle;
-
-import androidx.activity.EdgeToEdge;
+import android.view.View;
+import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
+
+    private Button rentButton, binomeButton, homesteadButton, helpButton, loginButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
+
+        rentButton = findViewById(R.id.rent_button);
+        binomeButton = findViewById(R.id.binome_button);
+        homesteadButton = findViewById(R.id.homestead_button);
+        helpButton = findViewById(R.id.help_button);
+        loginButton = findViewById(R.id.login_button);
+
+        rentButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openPage("Rent");
+            }
         });
+
+        binomeButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openPage("Binome");
+            }
+        });
+
+        homesteadButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openPage("Homestead");
+            }
+        });
+
+        helpButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openPage("Help");
+            }
+        });
+
+        loginButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openPage("Login");
+            }
+        });
+    }
+
+    private void openPage(String pageName) {
+        Intent intent = new Intent(MainActivity.this, PageActivity.class);
+        intent.putExtra("page", pageName);
+        startActivity(intent);
     }
 }
