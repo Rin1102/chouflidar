@@ -17,66 +17,68 @@
         android:elevation="4dp" />
 
     <!-- Scrollable Content -->
+
+    <!-- Footer -->
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@id/toolbar">
 
         <LinearLayout
-            android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:orientation="vertical"
             android:padding="16dp">
 
             <!-- Navbar Menu (Buttons) -->
             <LinearLayout
-                android:orientation="horizontal"
-                android:gravity="center"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
 
                 <Button
                     android:id="@+id/rent_button"
-                    android:text="@string/rent_button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginEnd="16dp"/>
+                    android:layout_marginEnd="16dp"
+                    android:text="@string/rent_button" />
 
                 <Button
                     android:id="@+id/binome_button"
-                    android:text="@string/binome_button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginEnd="16dp"/>
+                    android:layout_marginEnd="16dp"
+                    android:text="@string/binome_button" />
 
                 <Button
                     android:id="@+id/homestead_button"
-                    android:text="@string/homestead_button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginEnd="16dp"/>
+                    android:layout_marginEnd="16dp"
+                    android:text="@string/homestead_button" />
 
                 <Button
                     android:id="@+id/help_button"
-                    android:text="@string/help_button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginEnd="16dp"/>
+                    android:layout_marginEnd="16dp"
+                    android:text="@string/help_button" />
 
                 <Button
                     android:id="@+id/login_button"
-                    android:text="@string/login_button"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
+                    android:layout_height="wrap_content"
+                    android:text="@string/login_button" />
             </LinearLayout>
 
             <!-- Cards -->
             <LinearLayout
-                android:orientation="horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
                 android:gravity="center"
-                android:layout_marginTop="20dp">
+                android:orientation="horizontal">
 
                 <!-- Rent Card -->
                 <CardView
@@ -85,13 +87,14 @@
                     android:layout_height="200dp"
                     android:layout_marginEnd="16dp"
                     android:layout_weight="1">
+
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:gravity="center"
                         android:text="@string/rent_button"
-                        android:textSize="20sp"
-                        android:textColor="@color/light_brown"/>
+                        android:textColor="@color/light_brown"
+                        android:textSize="20sp" />
                 </CardView>
 
                 <!-- Binome Card -->
@@ -101,13 +104,14 @@
                     android:layout_height="200dp"
                     android:layout_marginEnd="16dp"
                     android:layout_weight="1">
+
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:gravity="center"
                         android:text="@string/binome_button"
-                        android:textSize="20sp"
-                        android:textColor="@color/light_brown"/>
+                        android:textColor="@color/light_brown"
+                        android:textSize="20sp" />
                 </CardView>
 
                 <!-- Homestead Card -->
@@ -116,20 +120,20 @@
                     android:layout_width="0dp"
                     android:layout_height="200dp"
                     android:layout_weight="1">
+
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:gravity="center"
                         android:text="@string/homestead_button"
-                        android:textSize="20sp"
-                        android:textColor="@color/light_brown"/>
+                        android:textColor="@color/light_brown"
+                        android:textSize="20sp" />
                 </CardView>
             </LinearLayout>
 
         </LinearLayout>
     </ScrollView>
 
-    <!-- Footer -->
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

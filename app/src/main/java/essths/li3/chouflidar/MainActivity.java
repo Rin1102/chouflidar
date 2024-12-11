@@ -1,4 +1,4 @@
-package com.example.rentalapp;
+package essths.li3.chouflidar;
 
 import android.content.Intent;
 import android.os.Bundle;
