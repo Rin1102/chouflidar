@@ -27,10 +27,12 @@ public class SignInActivity extends AppCompatActivity {
         if (email.equals("admin") && password.equals("admin")) {
             // Show a welcome toast
             Toast.makeText(this, "Welcome!", Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(SignInActivity.this, AcceuilActivity.class);
+            startActivity(intent);
+            finish(); // Close the SignInActivity so the user cannot go back
 
             // Redirect to another activity (e.g., home page)
-            Intent intent = new Intent(this, WelcomeActivity.class);
-            startActivity(intent);
+
         } else {
             // Show an error toast
             Toast.makeText(this, "Please verify your entries!", Toast.LENGTH_SHORT).show();

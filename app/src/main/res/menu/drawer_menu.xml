@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navrent"
+        android:title="Rent" />
+    <item
+        android:id="@+id/navbinome"
+        android:title="Binome" />
+    <item
+        android:id="@+id/navhomesteads"
+        android:title="Homesteads" />
+</menu>

@@ -9,4 +9,7 @@
     <string name="welcome_to_choufli_dar">Welcome to Choufli Dar</string>
     <string name="your_comfort_our_commitment">Your comfort, our commitment.</string>
     <string name="welcome_to_nchoufli_dar">Welcome To\nChoufli Dar</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
 </resources>

@@ -32,6 +32,9 @@
         <activity
             android:name=".SignInActivity"
             android:exported="true" />
+        <activity
+            android:name=".AcceuilActivity"
+            android:exported="true" />
     </application>
 
 </manifest>
