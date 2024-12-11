@@ -43,11 +43,11 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText(MainActivity.this, "Rent selected", Toast.LENGTH_SHORT).show();
                 } else if (id == R.id.navbinome) {
                     Toast.makeText(MainActivity.this, "Binome selected", Toast.LENGTH_SHORT).show();
-                } else if (id == R.id.navhomesteads) {
+                } /*else if (id == R.id.navhomesteads) {
                     // Navigate to HomesteadActivity from the menu
                     Intent intent = new Intent(MainActivity.this, HomesteadActivity.class);
                     startActivity(intent);
-                } else {
+                }*/ else {
                     Toast.makeText(MainActivity.this, "Unknown selection", Toast.LENGTH_SHORT).show();
                 }
 
@@ -58,8 +58,6 @@ public class MainActivity extends AppCompatActivity {
         });
 
     }
-
-    ;
 
     public void dialPhoneNumber(View view) {
         // Replace with the actual phone number
@@ -73,11 +71,3 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-
-
-
-
-            // Set Navigation Item Selected Listener
-
-    }
-}
