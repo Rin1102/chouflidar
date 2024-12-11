@@ -11,22 +11,16 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <!-- Top Toolbar Area with Logo -->
-        <LinearLayout
+        <!-- Toolbar -->
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
             android:background="#A67B5B"
-            android:padding="16dp">
-
-            <!-- Logo -->
-            <ImageView
-                android:id="@+id/logo_image"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:src="@drawable/logo"
-                android:contentDescription="App Logo" />
-        </LinearLayout>
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            android:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:contentInsetStart="16dp"
+            app:contentInsetEnd="16dp" />
 
         <!-- Content Section -->
         <ScrollView
@@ -59,15 +53,26 @@
                             android:layout_width="match_parent"
                             android:layout_height="200dp"
                             android:scaleType="centerCrop"
-                            android:src="@drawable/rent" />
+                            android:src="@drawable/usericonnn" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="Sirine Bouchnak "
+                            android:textColor="#000000"
+                            android:textStyle="bold"
+                            android:textSize="16sp" />
 
                         <Button
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="8dp"
                             android:backgroundTint="#8B4513"
-                            android:text="Rent"
-                            android:textColor="#FFFFFF" />
+                            android:text="call me"
+                            android:textColor="#FFFFFF"
+                            android:onClick="dialPhoneNumber" />
+
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
 
@@ -90,15 +95,23 @@
                             android:layout_width="match_parent"
                             android:layout_height="200dp"
                             android:scaleType="centerCrop"
-                            android:src="@drawable/mallek" />
+                            android:src="@drawable/usericonnn" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="Wijdene Baccouche "
+                            android:textColor="#000000"
+                            android:textStyle="bold"
+                            android:textSize="16sp" />
 
                         <Button
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="8dp"
                             android:backgroundTint="#8B4513"
-                            android:text="Homesteads"
-                            android:id="@+id/buttonHomestead"
+                            android:text="call me "
                             android:textColor="#FFFFFF" />
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
@@ -122,31 +135,35 @@
                             android:layout_width="match_parent"
                             android:layout_height="200dp"
                             android:scaleType="centerCrop"
-                            android:src="@drawable/binome" />
+                            android:src="@drawable/usericonnn" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="full name : binome 3"
+                            android:textColor="#000000"
+                            android:textStyle="bold"
+                            android:textSize="16sp" />
 
                         <Button
-                            android:id="@+id/buttonBinome"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="8dp"
                             android:backgroundTint="#8B4513"
-                            android:text="Binome"
+                            android:text="call me"
                             android:textColor="#FFFFFF" />
-
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
-
+                <com.google.android.material.navigation.NavigationView
+                    android:id="@+id/navigation_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="end"
+                    android:background="#A67B5B"
+                    app:headerLayout="@layout/nav_header"
+                    app:menu="@menu/drawer_menu" />
             </LinearLayout>
         </ScrollView>
     </LinearLayout>
-
-    <!-- Navigation Drawer -->
-    <com.google.android.material.navigation.NavigationView
-        android:id="@+id/navigation_view"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_gravity="start"
-        android:background="#A67B5B"
-        app:menu="@menu/drawer_menu" />
-
 </androidx.drawerlayout.widget.DrawerLayout>
