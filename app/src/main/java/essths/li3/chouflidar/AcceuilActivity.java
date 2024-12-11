@@ -1,7 +1,9 @@
 package essths.li3.chouflidar;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.widget.Button;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -23,6 +25,14 @@ public class AcceuilActivity extends AppCompatActivity {
         drawerLayout = findViewById(R.id.drawer_layout);
         NavigationView navigationView = findViewById(R.id.navigation_view);
 
+        // Initialize and handle the Homestead button click
+        Button buttonHomestead = findViewById(R.id.buttonHomestead);
+        buttonHomestead.setOnClickListener(v -> {
+            // Navigate to HomesteadActivity
+            Intent intent = new Intent(AcceuilActivity.this, HomesteadActivity.class);
+            startActivity(intent);
+        });
+
         // Set Navigation Item Selected Listener
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
@@ -34,7 +44,9 @@ public class AcceuilActivity extends AppCompatActivity {
                 } else if (id == R.id.navbinome) {
                     Toast.makeText(AcceuilActivity.this, "Binome selected", Toast.LENGTH_SHORT).show();
                 } else if (id == R.id.navhomesteads) {
-                    Toast.makeText(AcceuilActivity.this, "Homesteads selected", Toast.LENGTH_SHORT).show();
+                    // Navigate to HomesteadActivity from the menu
+                    Intent intent = new Intent(AcceuilActivity.this, HomesteadActivity.class);
+                    startActivity(intent);
                 } else {
                     Toast.makeText(AcceuilActivity.this, "Unknown selection", Toast.LENGTH_SHORT).show();
                 }
