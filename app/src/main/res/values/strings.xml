@@ -12,4 +12,22 @@
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
+
+
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="location">Location: Hammam Sousse</string>
+    <string name="price">Price: 700</string>
+    <string name="description">Description: For girls</string>
+    <string name="button">Rent Me!</string>
+    <string name="registration_form">Registration Form</string>
+    <string name="your_cin">Your CIN</string>
+    <string name="your_cinn">Your CIN</string>
+    <string name="submit">Submit</string>
+    <string name="city">City</string>
+    <string name="rooms_number">Rooms Number:</string>
+    <string name="_1">1</string>
+    <string name="_2">2</string>
+
 </resources>

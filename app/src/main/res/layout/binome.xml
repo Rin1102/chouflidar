@@ -34,7 +34,7 @@
                 android:gravity="center"
                 android:orientation="vertical">
 
-                <!-- Rent Card -->
+
                 <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -59,7 +59,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="8dp"
-                            android:text="Sirine Bouchnak "
+                            android:text="Full name: Sirine BOUCHNAK\nAge: 20\nEmail: sirine@mail.com"
                             android:textColor="#000000"
                             android:textStyle="bold"
                             android:textSize="16sp" />
@@ -69,14 +69,13 @@
                             android:layout_height="wrap_content"
                             android:layout_marginTop="8dp"
                             android:backgroundTint="#8B4513"
-                            android:text="call me"
+                            android:text="Call me "
                             android:textColor="#FFFFFF"
                             android:onClick="dialPhoneNumber" />
 
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
 
-                <!-- Homesteads Card -->
                 <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -101,22 +100,21 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="8dp"
-                            android:text="Wijdene Baccouche "
+                            android:text="Full name: Meryem FEKIH\nAge: 20\nEmail: meryem@mail.com"
                             android:textColor="#000000"
                             android:textStyle="bold"
                             android:textSize="16sp" />
-
                         <Button
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="8dp"
                             android:backgroundTint="#8B4513"
-                            android:text="call me "
-                            android:textColor="#FFFFFF" />
+                            android:text="Call me"
+                            android:textColor="#FFFFFF"
+                            android:onClick="dialPhoneNumber" />
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
 
-                <!-- Binome Card -->
                 <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -141,7 +139,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="8dp"
-                            android:text="full name : binome 3"
+                            android:text="Full name: Tayssir JALLOUL\nAge: 20\nEmail: tayssir@mail.com"
                             android:textColor="#000000"
                             android:textStyle="bold"
                             android:textSize="16sp" />
@@ -151,19 +149,23 @@
                             android:layout_height="wrap_content"
                             android:layout_marginTop="8dp"
                             android:backgroundTint="#8B4513"
-                            android:text="call me"
-                            android:textColor="#FFFFFF" />
+                            android:text="Call me"
+                            android:textColor="#FFFFFF"
+                            android:onClick="dialPhoneNumber" />
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
-                <com.google.android.material.navigation.NavigationView
-                    android:id="@+id/navigation_view"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="end"
-                    android:background="#A67B5B"
-                    app:headerLayout="@layout/nav_header"
-                    app:menu="@menu/drawer_menu" />
             </LinearLayout>
         </ScrollView>
     </LinearLayout>
+
+    <!-- Navigation Drawer -->
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="end"
+        android:background="#A67B5B"
+        app:headerLayout="@layout/nav_header"
+        app:menu="@menu/drawer_menu" />
+
 </androidx.drawerlayout.widget.DrawerLayout>

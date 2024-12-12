@@ -41,6 +41,9 @@
         <activity
             android:name=".Binome"
             android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"/>
     </application>
 
 </manifest>

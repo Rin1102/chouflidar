@@ -12,7 +12,7 @@
         android:orientation="vertical"
         android:padding="16dp"
         android:background="#FBE3C1"
-        android:layout_margin="16dp"
+        android:layout_margin="30dp"
         android:elevation="8dp"
         >
 
@@ -20,7 +20,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Registration Form"
+            android:text="@string/registration_form"
             android:textSize="20sp"
             android:textStyle="bold"
             android:gravity="center"
@@ -30,12 +30,12 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Your CIN" />
+            android:text="@string/your_cinn" />
         <EditText
             android:id="@+id/editTextCIN"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Your CIN"
+            android:hint="@string/your_cin"
             android:inputType="number" />
 
         <!-- Price and Surface -->
@@ -96,7 +96,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Rooms Number:"
+            android:text="@string/rooms_number"
             android:layout_marginTop="8dp" />
         <RadioGroup
             android:id="@+id/radioGroupRooms"
@@ -108,12 +108,12 @@
                 android:id="@+id/radioRoom1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="1" />
+                android:text="@string/_1" />
             <RadioButton
                 android:id="@+id/radioRoom2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="2" />
+                android:text="@string/_2" />
             <RadioButton
                 android:id="@+id/radioRoom3"
                 android:layout_width="wrap_content"
@@ -149,7 +149,7 @@
             android:id="@+id/editTextCity"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="City"
+            android:hint="@string/city"
             android:inputType="text" />
 
         <!-- Submit Button -->
@@ -158,8 +158,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:backgroundTint="#A67B5B"
-            android:text="Submit"
-            android:textColor="#FFFFFF" />
+            android:backgroundTint="@color/brown"
+            android:text="@string/submit"
+            android:textColor="@color/white" />
     </LinearLayout>
 </ScrollView>

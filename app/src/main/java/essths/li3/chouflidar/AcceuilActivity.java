@@ -41,6 +41,14 @@ public class AcceuilActivity extends AppCompatActivity {
             startActivity(intent);
         });
 
+        // Initialize and handle the Rent button click
+        Button buttonRent = findViewById(R.id.buttonRent);
+        buttonRent.setOnClickListener(v -> {
+            // Navigate to MainActivity
+            Intent intent = new Intent(AcceuilActivity.this, MainActivity.class);
+            startActivity(intent);
+        });
+
         // Set Navigation Item Selected Listener
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
@@ -48,7 +56,9 @@ public class AcceuilActivity extends AppCompatActivity {
                 int id = menuItem.getItemId();
 
                 if (id == R.id.navrent) {
-                    Toast.makeText(AcceuilActivity.this, "Rent selected", Toast.LENGTH_SHORT).show();
+                    // Navigate to MainActivity from the menu
+                    Intent intent = new Intent(AcceuilActivity.this, MainActivity.class);
+                    startActivity(intent);
                 } else if (id == R.id.navbinome) {
                     // Navigate to BinomeActivity from the menu
                     Intent intent = new Intent(AcceuilActivity.this, Binome.class);
